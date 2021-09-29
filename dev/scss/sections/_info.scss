@@ -2,13 +2,20 @@
     Info
 ============= */
 #info{
+    display: grid;
+    grid-template-columns: auto 1110px auto;
+    img {
+        padding-top: 20px;
+    }
+    div{
 h2{
     font-family: 'Ruda', sans-serif;
     color: black;
+
     font-size: 20px;
     font-weight: 300;
-    text-align: left;
-    display: flex;
-    padding-top: 50px;
+    text-align: center;
+padding-bottom: 300px;
 }
+    }
 }

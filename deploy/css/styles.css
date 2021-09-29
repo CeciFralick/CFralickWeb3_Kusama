@@ -366,6 +366,10 @@ ul li {
   text-decoration: none;
 }
 
+h2 {
+  text-align: center;
+}
+
 /* =============
     Typography
 ============= */
@@ -423,6 +427,8 @@ nav ul li a:link, nav ul li a:visited {
   transition: 0.25s;
   font-size: 1.125rem;
   font-weight: 300;
+  padding: 10px;
+  text-align: center;
 }
 nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav ul li a:visited:active {
   color: #ff9900;
@@ -433,12 +439,13 @@ nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav 
 ============= */
 #header {
   background-color: #161501;
-  padding-right: 10px;
 }
-
-img {
+#header img {
   padding-top: 16px;
   padding-left: 16px;
+}
+#header a {
+  text-align: center;
 }
 
 /* =============
@@ -448,10 +455,10 @@ img {
     Hero
 ============= */
 #Hero {
-  background-image: url("../img/hero/bg.jpg");
+  background-image: url("../img/hero/bg1.jpg");
   display: grid;
-  grid-template-areas: ". name flower";
-  grid-template-columns: auto 1200px 540px auto;
+  grid-template-areas: ". name flower .";
+  grid-template-columns: 50px 950px 100px 50px;
   background-repeat: no-repeat;
   padding-top: 100px;
   background-size: cover;
@@ -460,8 +467,8 @@ img {
 }
 #Hero div {
   text-align: center;
-  padding-left: 200px;
-  padding-top: 200px;
+  padding-left: 400px;
+  padding-top: 90px;
   padding-bottom: 200px;
   grid-area: name;
 }
@@ -470,24 +477,25 @@ img {
   color: white;
 }
 #Hero #flower {
-  text-align: center;
-  font-size: 11px;
-  grid-column: 2/-1;
+  text-align: left;
   grid-area: flower;
-  padding-right: 100px;
-  height: 100px;
-  width: 120px;
 }
 
 /* =============
     Info
 ============= */
-#info h2 {
+#info {
+  display: grid;
+  grid-template-columns: auto 1110px auto;
+}
+#info img {
+  padding-top: 20px;
+}
+#info div h2 {
   font-family: "Ruda", sans-serif;
   color: black;
   font-size: 20px;
   font-weight: 300;
-  text-align: left;
-  display: flex;
-  padding-top: 50px;
+  text-align: center;
+  padding-bottom: 300px;
 }

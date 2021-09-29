@@ -65,6 +65,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/hero\/Bg1.jpg" : {
+      "ft" : 16384,
+      "iS" : 2729280,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/hero\/Bg1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/hero\/Flower.png" : {
       "ft" : 32768,
       "iS" : 13042,
@@ -88,11 +101,24 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/deploy\/img\/info\/Sun.png" : {
+    "\/deploy\/img\/info\/line.png" : {
       "ft" : 32768,
-      "iS" : 9033,
+      "iS" : 1810,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/info\/Sun.png",
+      "oAP" : "\/deploy\/img\/info\/line.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/info\/sun.png" : {
+      "ft" : 32768,
+      "iS" : 12484,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/info\/sun.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
