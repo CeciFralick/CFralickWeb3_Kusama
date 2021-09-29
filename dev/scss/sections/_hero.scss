@@ -1,3 +1,35 @@
 /* =============
     Hero
 ============= */
+#Hero{
+    background-image: url("../img/hero/bg.jpg");
+    display: grid;
+        grid-template-areas: ". name flower";
+        grid-template-columns: auto 1200px 540px auto;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    div {
+        h1 
+        {font-family: 'Stick No Bills', sans-serif;
+        color: white;}
+        text-align: center;
+        padding-left: 200px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        grid-area: name;
+
+    }
+    #flower{
+        text-align: center;
+        font-size: 11px;
+        grid-column: 2 / -1;
+        grid-area: flower;
+        padding-right: 100px;
+        height: 100px;
+        width: 120px;
+
+    }
+}

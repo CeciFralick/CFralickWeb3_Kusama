@@ -29,6 +29,19 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/deploy\/img\/header\/Vector.png" : {
+      "ft" : 32768,
+      "iS" : 2027,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/header\/Vector.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/header\/Vector.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -52,6 +65,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/hero\/Flower.png" : {
+      "ft" : 32768,
+      "iS" : 13042,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/hero\/Flower.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/hero\/Flower.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -61,6 +87,19 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/deploy\/img\/info\/Sun.png" : {
+      "ft" : 32768,
+      "iS" : 9033,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/info\/Sun.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/deploy\/img\/info\/Sun.svg" : {
       "ft" : 2097152,
@@ -91,13 +130,21 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/dev\/content\/header.kit" : {
+    "\/dev\/content\/hero.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/index.kit",
-      "oF" : 2
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/hero.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/info.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/info.html",
+      "oF" : 0
     },
     "\/dev\/global\/head.kit" : {
       "cB" : 0,
@@ -105,6 +152,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/global\/head.html",
+      "oF" : 0
+    },
+    "\/dev\/global\/header.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/global\/header.html",
       "oF" : 0
     },
     "\/dev\/global\/scripts.kit" : {

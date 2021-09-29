@@ -363,21 +363,7 @@ ul {
 }
 ul li {
   list-style: none;
-}
-
-.container-grid {
-  display: grid;
-  grid-template-areas: ". grid-content .";
-  grid-template-columns: 15px auto 15px;
-  height: 100vh;
-}
-@media (min-width: 1200px) {
-  .container-grid {
-    grid-template-columns: auto 1200px auto;
-  }
-}
-.container-grid > div {
-  grid-area: grid-content;
+  text-decoration: none;
 }
 
 /* =============
@@ -422,9 +408,86 @@ textarea {
 /* =============
     Navigation
 ============= */
+nav ul {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav ul li {
+  margin-left: 4vw;
+}
+nav ul li a:link, nav ul li a:visited {
+  font-family: "Ruda", sans-serif;
+  color: #fbff00;
+  transition: 0.25s;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav ul li a:visited:active {
+  color: #ff9900;
+}
+
 /* =============
     Header
 ============= */
+#header {
+  background-color: #161501;
+  padding-right: 10px;
+}
+
+img {
+  padding-top: 16px;
+  padding-left: 16px;
+}
+
 /* =============
     Footer
 ============= */
+/* =============
+    Hero
+============= */
+#Hero {
+  background-image: url("../img/hero/bg.jpg");
+  display: grid;
+  grid-template-areas: ". name flower";
+  grid-template-columns: auto 1200px 540px auto;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+}
+#Hero div {
+  text-align: center;
+  padding-left: 200px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  grid-area: name;
+}
+#Hero div h1 {
+  font-family: "Stick No Bills", sans-serif;
+  color: white;
+}
+#Hero #flower {
+  text-align: center;
+  font-size: 11px;
+  grid-column: 2/-1;
+  grid-area: flower;
+  padding-right: 100px;
+  height: 100px;
+  width: 120px;
+}
+
+/* =============
+    Info
+============= */
+#info h2 {
+  font-family: "Ruda", sans-serif;
+  color: black;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: left;
+  display: flex;
+  padding-top: 50px;
+}
