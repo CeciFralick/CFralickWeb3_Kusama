@@ -425,7 +425,7 @@ nav ul li a:visited {
   font-family: "Ruda", sans-serif;
   color: #fbff00;
   font-weight: 300;
-  padding: 10px;
+  padding: 30px;
   text-align: center;
 }
 nav ul li a:link:hover, nav ul li a:link:active,
@@ -486,24 +486,19 @@ nav ul li a:visited:active {
 /* =============
     Info
 ============= */
-#info #sun {
-  padding: 100px;
-  position: absolute;
-  width: 1118px;
-  height: 492px;
+#info {
+  display: grid;
+  grid-template-columns: auto 80%;
+  grid-template-areas: ". sun";
 }
-#info h2 {
-  position: absolute;
-  width: 383px;
-  height: 349px;
+#info > div {
+  grid-area: sun;
+}
+#info > div img {
+  width: 100%;
+  padding-top: 20px;
+}
+#info > div article {
+  padding: 20px 43vw 20px 15vw;
   font-family: Ruda;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 37px;
-  font-family: "Ruda", sans-serif;
-  color: black;
-  font-size: 20px;
-  font-weight: 300;
-  text-align: center;
 }

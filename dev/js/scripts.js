@@ -5,6 +5,8 @@ const mainTL = gsap.timeline();
 const aniTime = 0.5;
 
 gsap.timeline()
-.from("#hero", {duration: 1, alpha:0, opacity:0})
-.from("#flower", {y: 50, duration: 1, delay: 1})
-.from("#flower", {xPercent:100, duration:0.2});
+.from("#hero", {duration: 1, alpha:0, opacity:0, yPercent:100})
+.from("#hero h1", {opacity:0, xPercent:100, duration:0.9})
+.from("#flower", {opacity:0, xPercent:100, duration:0.5})
+.from("#info img", {opacity:0, yPercent:100, duration:0.5})
+.from("#info p", {opacity:0, yPercent:100, duration:0.5});
