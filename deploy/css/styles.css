@@ -487,16 +487,30 @@ nav ul li a:visited:active {
     Info
 ============= */
 #info {
+  margin-top: 30px;
+  background-image: url("../img/info/line.png");
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position: 100% 20%;
   display: grid;
-  grid-template-columns: auto 80%;
+  grid-template-columns: auto 80% 1px;
   grid-template-areas: ". sun";
 }
 #info > div {
   grid-area: sun;
 }
-#info > div img {
+#info > div #line {
+  display: none;
+  grid-area: line;
   width: 100%;
-  padding-top: 20px;
+  padding-top: 80px;
+}
+#info > div #sun {
+  grid-area: sun;
+}
+#info > div #full {
+  display: none;
 }
 #info > div article {
   padding: 20px 35vw 20px 17vw;
@@ -506,4 +520,5 @@ nav ul li a:visited:active {
   font-size: 20px;
   line-height: 37px;
   font-family: "Ruda", sans-serif;
+  padding-top: 20px;
 }

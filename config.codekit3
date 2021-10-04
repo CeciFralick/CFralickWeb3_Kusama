@@ -103,9 +103,22 @@
     },
     "\/deploy\/img\/info\/line.png" : {
       "ft" : 32768,
-      "iS" : 1810,
+      "iS" : 285,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/info\/line.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/info\/osun.png" : {
+      "ft" : 32768,
+      "iS" : 9371,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/info\/osun.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -126,16 +139,6 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
-    },
-    "\/deploy\/img\/info\/Sun.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/deploy\/img\/info\/Sun.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
     },
     "\/deploy\/index.html" : {
       "cB" : 0,
