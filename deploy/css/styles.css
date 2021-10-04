@@ -412,9 +412,9 @@ nav ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-bottom: 20px;
   padding-right: 20px;
   font-size: 20px;
+  padding-bottom: 20px;
 }
 nav ul li {
   margin-left: 4vw;
@@ -428,7 +428,8 @@ nav ul li a:visited {
   color: #fbff00;
   font-weight: 300;
   padding: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
+  margin: 10px;
   text-align: center;
 }
 nav ul li a:link:hover, nav ul li a:link:active,
@@ -516,12 +517,22 @@ nav ul li a:visited:active {
   display: none;
 }
 #info > div article {
-  padding: 20px 35vw 20px 17vw;
+  padding: 1px 35vw 20px 18vw;
   font-family: "Ruda";
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 37px;
   font-family: "Ruda", sans-serif;
-  padding-top: 20px;
+}
+@media (min-width: 768px) {
+  #info > div article {
+    font-size: 20px;
+  }
+}
+@media (min-width: 992px) {
+  #info > div article {
+    font-size: 25px;
+    padding: 1px 35vw 20px 18vw;
+  }
 }
