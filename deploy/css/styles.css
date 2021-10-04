@@ -383,11 +383,6 @@ p {
   padding: 0;
 }
 
-h1 {
-  font-size: 6.25rem;
-  color: red;
-}
-
 /* =============
     Buttons
 ============= */
@@ -417,6 +412,8 @@ nav ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding-bottom: 20px;
+  padding-right: 20px;
 }
 nav ul li {
   margin-left: 4vw;
@@ -424,8 +421,7 @@ nav ul li {
 nav ul li a:link, nav ul li a:visited {
   font-family: "Ruda", sans-serif;
   color: #fbff00;
-  transition: 0.25s;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: 300;
   padding: 10px;
   text-align: center;
@@ -458,7 +454,7 @@ nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav 
   background-image: url("../img/hero/bg1.jpg");
   display: grid;
   grid-template-areas: ". name flower .";
-  grid-template-columns: 50px 950px 100px 50px;
+  grid-template-columns: 30px 750px 90px 50px;
   background-repeat: no-repeat;
   padding-top: 100px;
   background-size: cover;
@@ -467,9 +463,11 @@ nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav 
 }
 #Hero div {
   text-align: center;
-  padding-left: 400px;
+  height: 220px;
+  padding-left: 200px;
   padding-top: 90px;
   padding-bottom: 200px;
+  font-size: 2.25rem;
   grid-area: name;
 }
 #Hero div h1 {
@@ -486,16 +484,13 @@ nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav 
 ============= */
 #info {
   display: grid;
-  grid-template-columns: auto 1110px auto;
+  grid-template-columns: 1220px 110px 1220px;
 }
-#info img {
-  padding-top: 20px;
-}
-#info div h2 {
+#info h2 {
   font-family: "Ruda", sans-serif;
   color: black;
+  grid-column: 2/1;
   font-size: 20px;
   font-weight: 300;
   text-align: center;
-  padding-bottom: 300px;
 }

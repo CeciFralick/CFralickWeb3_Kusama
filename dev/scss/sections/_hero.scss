@@ -5,7 +5,7 @@
     background-image: url("../img/hero/bg1.jpg");
     display: grid;
         grid-template-areas: ". name flower .";
-        grid-template-columns: 50px 950px 100px 50px;
+        grid-template-columns: 30px 750px 90px 50px;
     background-repeat: no-repeat;
     padding-top: 100px;
     background-size: cover;
@@ -16,9 +16,11 @@
         {font-family: 'Stick No Bills', sans-serif;
         color: white;}
         text-align: center;
-        padding-left: 400px;
+        height: 220px;
+        padding-left: 200px;
         padding-top: 90px;
         padding-bottom: 200px;
+        font-size: rem-calc(36);
         grid-area:name;
     }
     #flower{

@@ -7,15 +7,17 @@ nav {
         display:flex;
         justify-content: flex-end;
         align-items: center;
+        padding-bottom: 20px;
+        padding-right: 20px;
         li{
             margin-left: 4vw;
             a:link, a:visited{  
                 font-family: 'Ruda', sans-serif;
                 color: $yellow;
-                transition: 0.25s;
-                font-size: rem-calc(18);
+                font-size: rem-calc(20);
                 font-weight: 300;
                 padding: 10px;
+
                 text-align:center;
 
                 &:hover, &:active{
