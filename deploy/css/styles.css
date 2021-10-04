@@ -408,7 +408,6 @@ textarea {
     Navigation
 ============= */
 nav ul {
-  height: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -418,15 +417,20 @@ nav ul {
 nav ul li {
   margin-left: 4vw;
 }
-nav ul li a:link, nav ul li a:visited {
+nav ul li a:link,
+nav ul li a:visited {
+  font-family: Ruda;
+  font-style: normal;
+  font-weight: normal;
   font-family: "Ruda", sans-serif;
   color: #fbff00;
-  font-size: 1.25rem;
   font-weight: 300;
   padding: 10px;
   text-align: center;
 }
-nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav ul li a:visited:active {
+nav ul li a:link:hover, nav ul li a:link:active,
+nav ul li a:visited:hover,
+nav ul li a:visited:active {
   color: #ff9900;
 }
 
@@ -467,7 +471,7 @@ nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav 
   padding-left: 200px;
   padding-top: 90px;
   padding-bottom: 200px;
-  font-size: 2.25rem;
+  font-size: 3.25rem;
   grid-area: name;
 }
 #Hero div h1 {
@@ -482,14 +486,23 @@ nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav 
 /* =============
     Info
 ============= */
-#info {
-  display: grid;
-  grid-template-columns: 1220px 110px 1220px;
+#info #sun {
+  padding: 100px;
+  position: absolute;
+  width: 1118px;
+  height: 492px;
 }
 #info h2 {
+  position: absolute;
+  width: 383px;
+  height: 349px;
+  font-family: Ruda;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 37px;
   font-family: "Ruda", sans-serif;
   color: black;
-  grid-column: 2/1;
   font-size: 20px;
   font-weight: 300;
   text-align: center;

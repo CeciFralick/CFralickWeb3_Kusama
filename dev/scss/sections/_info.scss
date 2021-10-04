@@ -2,14 +2,28 @@
     Info
 ============= */
 #info{
-    display: grid;
-    grid-template-columns: 1220px 110px 1220px;
+#sun {
+padding: 100px;
+position: absolute;
+width: 1118px;
+height: 492px;
+}
+
 h2{
+position: absolute;
+width: 383px;
+height: 349px;
+font-family: Ruda;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 37px;
     font-family: 'Ruda', sans-serif;
     color: black;
-grid-column: 2 / 1;
     font-size: 20px;
     font-weight: 300;
     text-align: center;
 }
     }
+
+    

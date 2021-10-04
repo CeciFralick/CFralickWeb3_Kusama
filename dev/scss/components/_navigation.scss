@@ -2,28 +2,35 @@
     Navigation
 ============= */
 nav {
-    ul{
-        height: 100%;
-        display:flex;
+    ul {
+
+        display: flex;
         justify-content: flex-end;
         align-items: center;
         padding-bottom: 20px;
         padding-right: 20px;
-        li{
+
+        li {
             margin-left: 4vw;
-            a:link, a:visited{  
+
+            a:link,
+            a:visited {
+
+                font-family: Ruda;
+                font-style: normal;
+                font-weight: normal;
                 font-family: 'Ruda', sans-serif;
                 color: $yellow;
-                font-size: rem-calc(20);
                 font-weight: 300;
                 padding: 10px;
 
-                text-align:center;
+                text-align: center;
 
-                &:hover, &:active{
+                &:hover,
+                &:active {
                     color: $orange;
+                }
             }
         }
-    }
     }
 }
