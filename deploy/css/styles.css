@@ -455,6 +455,19 @@ nav ul li a:visited:active {
 /* =============
     Footer
 ============= */
+#preloader {
+  background-color: #130e00;
+}
+#preloader > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#preloader > div svg {
+  border: 1px solid red;
+}
+
 /* =============
     Hero
 ============= */
