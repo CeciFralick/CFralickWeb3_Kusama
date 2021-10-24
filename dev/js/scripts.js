@@ -27,7 +27,7 @@ function layertwo(){
 }
 function layerthree(){
     const tl=gsap.timeline();
-    tl.to("#frame2",{morphSVG:"#frame3",opacity:0},"playSameTime");
+    tl.to("#frame2",{morphSVG:"#frame2",opacity:0},"playSameTime");
     tl.from("#frame3",{opacity:0, duration:.5},"playSameTime");
     return tl;
 }
@@ -55,9 +55,15 @@ function layerseven(){
     tl.from("#frame7",{opacity:0, duration:.5},"playSameTime");
     return tl;
 }
-function layernine(){
+function layereight(){
     const tl=gsap.timeline();
     tl.to("#frame7",{opacity:0},"playSameTime");
+    tl.from("#frame8",{opacity:0, duration:.5},"playSameTime");
+    return tl;
+}
+function layernine(){
+    const tl=gsap.timeline();
+    tl.to("#frame8",{opacity:0},"playSameTime");
     tl.from("#frame9",{opacity:0, duration:.5},"playSameTime");
     return tl;
 }
@@ -110,6 +116,7 @@ mainTL.add(fivedots())
 .add(layerfive())
 .add(layersix())
 .add(layerseven())
+.add(layereight())
 .add(layernine())
 .add(layerten())
 .add(layereleven())
@@ -125,6 +132,7 @@ mainTL.add(fivedots())
 
 
 GSDevTools.create();
+MorphSVGPlugin.create();
 
 
 
