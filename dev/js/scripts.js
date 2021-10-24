@@ -1,9 +1,13 @@
 import { gsap } from "gsap";
+import { GSDevTools } from "gsap/GSDevTools";
+import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
+
+gsap.registerPlugin(GSDevTools, MorphSVGPlugin);
 
 const mainTL = gsap.timeline();
 
 function fivedots(){
-    const tl=gsap.timeline();
+    const tl=gsap.timeline(); 
     tl.from("#c1",{opacity:1, duration:.5, x:"-1000"})
     tl.from("#c2",{opacity:1, duration:.5, x:"-1000"})
     tl.from("#c5",{opacity:1, duration:.5, x:"-1000"})
@@ -18,82 +22,82 @@ function fivedots(){
 }
 function layertwo(){
     const tl=gsap.timeline();
-    tl.from("#frame2",{opacity:0,duration:1});
+    tl.from("#frame2",{opacity:0,duration:.5});
     return tl;
 }
 function layerthree(){
     const tl=gsap.timeline();
-    tl.to("#frame2",{opacity:0},"playSameTime");
-    tl.from("#frame3",{opacity:0, duration:1},"playSameTime");
+    tl.to("#frame2",{morphSVG:"#frame3",opacity:0},"playSameTime");
+    tl.from("#frame3",{opacity:0, duration:.5},"playSameTime");
     return tl;
 }
 function layerfour(){
     const tl=gsap.timeline();
-    tl.to("#frame3",{opacity:0},"playSameTime");
-    tl.from("#frame4",{opacity:0, duration:1},"playSameTime");
+    tl.to("#frame3",{morphSVG:"#frame4",opacity:0},"playSameTime");
+    tl.from("#frame4",{opacity:0, duration:.5},"playSameTime");
     return tl;
 }
 function layerfive(){
     const tl=gsap.timeline();
-    tl.to("#frame4",{opacity:0},"playSameTime");
-    tl.from("#frame5",{opacity:0, duration:1},"playSameTime");
+    tl.to("#frame4",{morphSVG:"#frame5",opacity:0},"playSameTime");
+    tl.from("#frame5",{opacity:0, duration:.5},"playSameTime");
     return tl;
 }
 function layersix(){
     const tl=gsap.timeline();
     tl.to("#frame5",{opacity:0},"playSameTime");
-    tl.from("#frame6",{opacity:0, duration:1},"playSameTime");
+    tl.from("#frame6",{opacity:0, duration:.5},"playSameTime");
     return tl;
 }
 function layerseven(){
     const tl=gsap.timeline();
     tl.to("#frame6",{opacity:0},"playSameTime");
-    tl.from("#frame7",{opacity:0, duration:1},"playSameTime");
+    tl.from("#frame7",{opacity:0, duration:.5},"playSameTime");
     return tl;
 }
 function layernine(){
     const tl=gsap.timeline();
     tl.to("#frame7",{opacity:0},"playSameTime");
-    tl.from("#frame9",{opacity:0, duration:1},"playSameTime");
+    tl.from("#frame9",{opacity:0, duration:.5},"playSameTime");
     return tl;
 }
 function layerten(){
     const tl=gsap.timeline();
-    tl.from("#frame10",{opacity:0, duration:1});
+    tl.from("#frame10",{opacity:0, duration:.5});
     return tl;
 }
 function layereleven(){
     const tl=gsap.timeline();
     tl.to("#frame10",{opacity:0},"playSameTime");
-    tl.from("#frame11",{opacity:0, duration:1},"playSameTime");
+    tl.from("#frame11",{opacity:0, duration:.5},"playSameTime");
     return tl;
 }
 function layertwelve(){
     const tl=gsap.timeline();
     tl.to("#frame11",{opacity:0},"playSameTime");
-    tl.from("#frame12",{opacity:0, duration:1},"playSameTime");
+    tl.from("#frame12",{opacity:0, duration:.5},"playSameTime");
     return tl;
 }
 function layerthirteen(){
     const tl=gsap.timeline();
     tl.to("#frame12",{opacity:0},"playSameTime");
-    tl.from("#frame13",{opacity:0, duration:1},"playSameTime");
+    tl.from("#frame13",{opacity:0, duration:.5},"playSameTime");
     return tl;
 }
 function layerfourteen(){
     const tl=gsap.timeline();
     tl.to("#frame13",{opacity:0},"playSameTime");
-    tl.from("#frame14",{opacity:0, duration:1},"playSameTime");
+    tl.from("#frame14",{opacity:0, duration:.5},"playSameTime");
     return tl;
 }
 function layerdots(){
     const tl=gsap.timeline();
-    tl.from("#Layer8",{opacity:0, duration:1});
+    tl.from("#Layer8",{opacity:0, duration:.5});
     return tl;
 }
 function layerfifteen(){
     const tl=gsap.timeline();
-    tl.from("#frame15",{opacity:0, duration:1});
+    tl.from("#frame15",{opacity:0, duration:.5});
     return tl;
 }
 
@@ -120,15 +124,7 @@ mainTL.add(fivedots())
 
 
 
-
-
-
-
-
-
-
-
-
+GSDevTools.create();
 
 
 
