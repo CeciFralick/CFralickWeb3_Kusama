@@ -27,19 +27,33 @@ function layertwo(){
 }
 function layerthree(){
     const tl=gsap.timeline();
-    tl.to("#frame2",{morphSVG:"#frame2",opacity:0},"playSameTime");
+    // tl.to("#frame2",{morphSVG:"#frame3",opacity:0},"playSameTime");
+    tl.to("#ca1",{morphSVG:"#ca2",opacity:0},"playSameTime");
+    tl.to("#cb1",{morphSVG:"#cb2",opacity:0},"playSameTime");
+    tl.to("#cc1",{morphSVG:"#cc2",opacity:0},"playSameTime");
+    tl.to("#cd1",{morphSVG:"#cd2",opacity:0},"playSameTime");
+    tl.to("#ce1",{morphSVG:"#ce2",opacity:0},"playSameTime");
     tl.from("#frame3",{opacity:0, duration:.5},"playSameTime");
     return tl;
 }
 function layerfour(){
     const tl=gsap.timeline();
-    tl.to("#frame3",{morphSVG:"#frame4",opacity:0},"playSameTime");
+    // tl.to("#frame3",{morphSVG:"#frame4",opacity:0},"playSameTime");
+    tl.to("#ca2",{morphSVG:"#ca3",opacity:0},"playSameTime");
+    tl.to("#cb2",{morphSVG:"#cb3",opacity:0},"playSameTime");
+    tl.to("#cc2",{morphSVG:"#cc3",opacity:0},"playSameTime");
+    tl.to("#cd2",{morphSVG:"#cd3",opacity:0},"playSameTime");
+    tl.to("#ce2",{opacity:0},"playSameTime");
     tl.from("#frame4",{opacity:0, duration:.5},"playSameTime");
     return tl;
 }
 function layerfive(){
     const tl=gsap.timeline();
-    tl.to("#frame4",{morphSVG:"#frame5",opacity:0},"playSameTime");
+    // tl.to("#frame4",{morphSVG:"#frame5",opacity:0},"playSameTime");
+    tl.to("#ca3",{morphSVG:"#cc4",opacity:0},"playSameTime");
+    tl.to("#cb3",{morphSVG:"#cb4",opacity:0},"playSameTime");
+    tl.to("#cc3",{morphSVG:"#ca4",opacity:0},"playSameTime");
+    tl.to("#cd3",{morphSVG:"#cd4",opacity:0},"playSameTime");
     tl.from("#frame5",{opacity:0, duration:.5},"playSameTime");
     return tl;
 }
@@ -132,7 +146,6 @@ mainTL.add(fivedots())
 
 
 GSDevTools.create();
-MorphSVGPlugin.create();
 
 
 
