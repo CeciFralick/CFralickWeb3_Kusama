@@ -13,11 +13,11 @@ function fivedots(){
     tl.from("#c5",{opacity:1, duration:.5, x:"-1000"})
     tl.from("#c4",{opacity:1, duration:.5, x:"-1000"})
     tl.from("#c3",{opacity:1, duration:.5, x:"-1000"})
-    tl.to("#c1", {opacity:0},"playSameTime")
-    tl.to("#c2", {opacity:0},"playSameTime")
-    tl.to("#c5", {opacity:0},"playSameTime")
-    tl.to("#c4", {opacity:0},"playSameTime")
-    tl.to("#c3", {opacity:0},"playSameTime");
+    tl.to("#c1", {morphSVG:"#ce1",opacity:0},"playSameTime")
+    tl.to("#c2", {morphSVG:"#cb1",opacity:0},"playSameTime")
+    tl.to("#c5", {morphSVG:"#ca1",opacity:0},"playSameTime")
+    tl.to("#c4", {morphSVG:"#cc1",opacity:0},"playSameTime")
+    tl.to("#c3", {morphSVG:"#cd1",opacity:0},"playSameTime");
     return tl;
 }
 function layertwo(){
@@ -43,17 +43,18 @@ function layerfour(){
     tl.to("#cb2",{morphSVG:"#cb3",opacity:0},"playSameTime");
     tl.to("#cc2",{morphSVG:"#cc3",opacity:0},"playSameTime");
     tl.to("#cd2",{morphSVG:"#cd3",opacity:0},"playSameTime");
-    tl.to("#ce2",{opacity:0},"playSameTime");
+    tl.to("#ce2",{morphSVG:"#cb3",opacity:0},"playSameTime");
     tl.from("#frame4",{opacity:0, duration:.5},"playSameTime");
     return tl;
 }
 function layerfive(){
     const tl=gsap.timeline();
     // tl.to("#frame4",{morphSVG:"#frame5",opacity:0},"playSameTime");
-    tl.to("#ca3",{morphSVG:"#cc4",opacity:0},"playSameTime");
-    tl.to("#cb3",{morphSVG:"#cb4",opacity:0},"playSameTime");
+    tl.to("#ca3",{morphSVG:"#cb4",opacity:0},"playSameTime");
+    tl.to("#cb3",{morphSVG:"#cc4",opacity:0},"playSameTime");
     tl.to("#cc3",{morphSVG:"#ca4",opacity:0},"playSameTime");
     tl.to("#cd3",{morphSVG:"#cd4",opacity:0},"playSameTime");
+    tl.to("#ce3",{morphSVG:"#cc4",opacity:0},"playSameTime");
     tl.from("#frame5",{opacity:0, duration:.5},"playSameTime");
     return tl;
 }
