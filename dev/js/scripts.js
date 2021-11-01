@@ -8,11 +8,11 @@ const mainTL = gsap.timeline();
 
 function fivedots(){
     const tl=gsap.timeline(); 
-    tl.from("#c1",{opacity:1, duration:.5, x:"-1000"})
-    tl.from("#c2",{opacity:1, duration:.5, x:"-1000"})
-    tl.from("#c5",{opacity:1, duration:.5, x:"-1000"})
-    tl.from("#c4",{opacity:1, duration:.5, x:"-1000"})
-    tl.from("#c3",{opacity:1, duration:.5, x:"-1000"})
+    tl.from("#c1",{opacity:0, duration:.5, x:"-1000"})
+    tl.from("#c2",{opacity:0, duration:.5, x:"-1000"})
+    tl.from("#c5",{opacity:0, duration:.5, x:"-1000"})
+    tl.from("#c4",{opacity:0, duration:.5, x:"-1000"})
+    tl.from("#c3",{opacity:0, duration:.5, x:"-1000"})
     tl.to("#c1", {morphSVG:"#ce1",opacity:0},"playSameTime")
     tl.to("#c2", {morphSVG:"#cb1",opacity:0},"playSameTime")
     tl.to("#c5", {morphSVG:"#ca1",opacity:0},"playSameTime")
@@ -22,7 +22,7 @@ function fivedots(){
 }
 function layertwo(){
     const tl=gsap.timeline();
-    tl.from("#frame2",{opacity:0,duration:.5});
+    tl.from("#frame2",{opacity:0});
     return tl;
 }
 function layerthree(){

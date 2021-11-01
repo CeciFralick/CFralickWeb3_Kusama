@@ -443,6 +443,11 @@ nav ul li a:visited:active {
 ============= */
 #header {
   background-color: #0f0f01;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 500;
 }
 #header img {
   padding-top: 16px;
@@ -456,6 +461,8 @@ nav ul li a:visited:active {
     Footer
 ============= */
 #preloader {
+  position: relative;
+  z-index: 1000;
   background-color: #fff9c7;
 }
 #preloader > div {
