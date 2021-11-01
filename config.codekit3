@@ -52,21 +52,31 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/deploy\/img\/hero\/.Bg.jpg.icloud" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
+    "\/deploy\/img\/hero\/Bg.jpg" : {
+      "ft" : 16384,
+      "iS" : 2833258,
+      "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/hero\/.Bg.jpg.icloud",
-      "oF" : 0
+      "oAP" : "\/deploy\/img\/hero\/Bg.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
-    "\/deploy\/img\/hero\/.Bg1.jpg.icloud" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
+    "\/deploy\/img\/hero\/Bg1.jpg" : {
+      "ft" : 16384,
+      "iS" : 2729280,
+      "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/hero\/.Bg1.jpg.icloud",
-      "oF" : 0
+      "oAP" : "\/deploy\/img\/hero\/Bg1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/deploy\/img\/hero\/Flower.png" : {
       "ft" : 32768,
