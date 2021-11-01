@@ -370,6 +370,10 @@ h2 {
   text-align: center;
 }
 
+.vanish {
+  display: none;
+}
+
 /* =============
     Typography
 ============= */
@@ -469,7 +473,7 @@ nav ul li a:visited:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 110%;
 }
 #preloader > div svg {
   border: 1px;
