@@ -466,6 +466,8 @@ nav ul li a:visited:active {
 ============= */
 #preloader {
   position: fixed;
+  height: 100vh;
+  width: 100%;
   z-index: 1000;
   background-color: #fff9c7;
 }
@@ -473,10 +475,16 @@ nav ul li a:visited:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 110%;
+  height: 100%;
+  position: relative;
 }
-#preloader > div svg {
-  border: 1px;
+#preloader > div section {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* =============

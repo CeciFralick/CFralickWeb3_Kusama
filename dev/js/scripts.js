@@ -174,7 +174,7 @@ function layerfifteen(){
 function endseq(){
     const tl=gsap.timeline();
     tl.to("#frame10",{alpha:0, duration:.2})
-    tl.to("#Vector_218",{scale:100, duration:1})
+    tl.to("#Vector_218",{scale:100, duration:.7})
     .to("#preloader",{duration:0.25, alpha:0, onComplete:backToTop})
     // tl.to("#Vector_218",{scaleY:150});
     return tl;

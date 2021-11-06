@@ -1,5 +1,7 @@
 #preloader {
     position: fixed;
+    height: 100vh;
+    width: 100%;
     // height: 100vh;
     // width: 100%;
     z-index: 1000;
@@ -20,14 +22,19 @@
     
     
     >div {
-        // grid-area: preloader;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 110%;
-        svg{
-            border: 1px;
-            // visibility: hidden;
+        height: 100%;
+        position: relative;
+
+        section{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
