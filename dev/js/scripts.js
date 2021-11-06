@@ -4,6 +4,8 @@ import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 
 gsap.registerPlugin(GSDevTools, MorphSVGPlugin);
 
+gsap.set("#Vector_218",{transformOrigin: "50% 50%"})
+
 const mainTL = gsap.timeline();
 
 function fivedots(){
@@ -169,6 +171,31 @@ function layerfifteen(){
     tl.from("#frame15",{autoAlpha:0, duration:.5});
     return tl;
 }
+function endseq(){
+    const tl=gsap.timeline();
+    tl.to("#frame10",{alpha:0, duration:.2})
+    tl.to("#Vector_218",{scale:100, duration:1})
+    .to("#preloader",{duration:0.25, alpha:0, onComplete:backToTop})
+    // tl.to("#Vector_218",{scaleY:150});
+    return tl;
+}
+
+function backToTop(){
+    window.scrollTo(0,0);
+    gsap.set("#preloader",{display:"none"});
+}
+
+function heroanimations(){
+    const tl=gsap.timeline();
+    tl.from("#header img", {duration: .5, alpha:0, opacity:0, xPercent:-100})
+    .from("#hero", {duration: 1, alpha:0, opacity:0, yPercent:100})
+    .from("#hero h1", {opacity:0, xPercent:100, duration:0.9})
+    .from("#flower", {opacity:0, xPercent:100, duration:0.5})
+    // .from("#info #line", {opacity:0, yPercent:100, duration:0.5})
+    .from("#info #sun", {opacity:0, duration: 2, xPercent:100, rotation: "+=360"}, "spin")
+    .from("#info p", {opacity:0, yPercent:100, duration:0.5});
+    return tl;
+}
 
 
 
@@ -188,7 +215,8 @@ mainTL.add(fivedots())
 .add(layerfourteen(),"playSameTime")
 .add(layerfifteen())
 .add(layerdots(),"playSameTime")
-
+.add(endseq())
+.add(heroanimations(),"-=25%")
 ;
 
 
@@ -204,10 +232,3 @@ GSDevTools.create();
 // const aniTime = 0.5;
 
 // gsap.timeline()
-// .from("#header img", {duration: 1, alpha:0, opacity:0, xPercent:-100})
-// .from("#hero", {duration: 1, alpha:0, opacity:0, yPercent:100})
-// .from("#hero h1", {opacity:0, xPercent:100, duration:0.9})
-// .from("#flower", {opacity:0, xPercent:100, duration:0.5})
-// // .from("#info #line", {opacity:0, yPercent:100, duration:0.5})
-// .from("#info #sun", {opacity:0, duration: 2, xPercent:100, rotation: "+=360"}, "spin")
-// .from("#info p", {opacity:0, yPercent:100, duration:0.5});

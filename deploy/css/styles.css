@@ -465,7 +465,7 @@ nav ul li a:visited:active {
     Footer
 ============= */
 #preloader {
-  position: relative;
+  position: fixed;
   z-index: 1000;
   background-color: #fff9c7;
 }
