@@ -158,19 +158,19 @@ function layereleven(){
 }
 function layertwelve(){
     const tl=gsap.timeline();
-    tl.to("#frame11",{opacity:0, duration:.5},"playSameTime");
+    // tl.to("#frame11",{opacity:0, duration:.5},"playSameTime");
     tl.from("#frame12",{autoAlpha:0, duration:.5},"playSameTime");
     return tl;
 }
 function layerthirteen(){
     const tl=gsap.timeline();
-    tl.to("#frame12",{opacity:0, duration:.5},"playSameTime");
+    // tl.to("#frame12",{opacity:0, duration:.5},"playSameTime");
     tl.from("#frame13",{autoAlpha:0, duration:.5},"playSameTime");
     return tl;
 }
 function layerfourteen(){
     const tl=gsap.timeline();
-    tl.to("#frame13",{opacity:0, duration:.5},"playSameTime");
+    // tl.to("#frame13",{opacity:0, duration:.5},"playSameTime");
     tl.from("#frame14",{autoAlpha:0, duration:.5},"playSameTime");
     return tl;
 }
@@ -220,7 +220,7 @@ mainTL.add(fivedots())
 .add(layersix())
 .add(layerseven())
 // .add(layereight())
-.add(layernine(),"-=98%")
+.add(layernine(),"-=99%")
 .add(layerten())
 .add(layereleven())
 .add(layertwelve())
