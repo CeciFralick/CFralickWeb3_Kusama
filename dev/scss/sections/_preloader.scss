@@ -28,6 +28,10 @@
         height: 100%;
         position: relative;
 
+        #frame2, #frame3, #frame4, #frame5, #frame6, #frame7, #frame8{
+            visibility:hidden;
+          }
+
         section{
             position: absolute;
             height: 100%;

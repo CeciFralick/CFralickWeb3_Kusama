@@ -478,6 +478,9 @@ nav ul li a:visited:active {
   height: 100%;
   position: relative;
 }
+#preloader > div #frame2, #preloader > div #frame3, #preloader > div #frame4, #preloader > div #frame5, #preloader > div #frame6, #preloader > div #frame7, #preloader > div #frame8 {
+  visibility: hidden;
+}
 #preloader > div section {
   position: absolute;
   height: 100%;
