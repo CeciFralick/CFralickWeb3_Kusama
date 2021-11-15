@@ -29,6 +29,16 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/deploy\/img\/cameraSVG.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/cameraSVG.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/header\/Vector.png" : {
       "ft" : 32768,
       "iS" : 2027,
@@ -159,19 +169,19 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/dev\/content\/logo.kit" : {
+    "\/dev\/content\/cameraSVG.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/logo.html",
+      "oAP" : "\/dev\/content\/cameraSVG.html",
       "oF" : 0
     },
     "\/dev\/global\/head.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/global\/head.html",
       "oF" : 0
     },
@@ -179,7 +189,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/global\/scripts.html",
       "oF" : 0
     },
@@ -352,7 +362,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_logo.scss" : {
+    "\/dev\/scss\/sections\/_cameraSVG.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -361,7 +371,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_logo.css",
+      "oAP" : "\/dev\/scss\/sections\/_cameraSVG.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,

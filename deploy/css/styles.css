@@ -473,9 +473,9 @@ nav ul li a:visited:active {
     Footer
 ============= */
 /* =============
-    Logo
+    cameraSVG
 ============= */
-#logo {
+#cameraSVG {
   background-color: lightyellow;
   display: grid;
   grid-template-columns: auto 95vw auto;
@@ -483,21 +483,21 @@ nav ul li a:visited:active {
   height: 110vh;
 }
 @media (min-width: 768px) {
-  #logo {
+  #cameraSVG {
     grid-template-columns: auto 80vw auto;
   }
 }
 @media (min-width: 992px) {
-  #logo {
+  #cameraSVG {
     grid-template-columns: auto 85vw auto;
   }
 }
 @media (min-width: 1200px) {
-  #logo {
+  #cameraSVG {
     grid-template-columns: auto 75vw auto;
   }
 }
-#logo > div {
+#cameraSVG > div {
   display: flex;
   justify-content: center;
   align-items: center;
