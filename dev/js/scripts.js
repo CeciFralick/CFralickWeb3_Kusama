@@ -15,6 +15,7 @@ const mainTL = gsap.timeline();
 function bodymorph(){
     const tl=gsap.timeline(); 
     tl.from("#smbody",{opacity:0, duration: 2, xPercent:100, rotation: "+=360"}, "spin")
+    tl.to("#smbody", {morphSVG:"#body",duration:.4},"playSameTime")
     return tl;
 }
 // function layertwo(){
