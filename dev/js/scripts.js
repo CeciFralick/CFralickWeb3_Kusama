@@ -9,8 +9,8 @@ gsap.set("#smbody",{transformOrigin: "50% 50%"})
 gsap.set("#lense",{transformOrigin: "50% 50%"})
 
 const mainTL = gsap.timeline();
-mainTL.from("tleft", {drawSVG:"100%"}, {duration: 1, drawSVG:"50% 50%", stagger: 0.1})
-  .to("tright", {drawSVG:"0%"}, {duration: 0.1, drawSVG:"10%"}, "+=0.1")
+// mainTL.from("tleft",{duration:0.25, scaleY:0, ease: "none)"},"-=20%")
+  mainTL.from("tleft",{drawSVG:"10% 100%", ease:"none"})
 mainTL.from("#smbody",{opacity:0, duration:1, y:"1000", rotate:-180})
 mainTL.to("#smbody", {morphSVG:"#body",duration:.4})
 mainTL.from("#smflash",{duration:1},"playSameTime")
