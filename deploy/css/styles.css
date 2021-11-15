@@ -456,10 +456,10 @@ nav ul li a:visited:active {
     Footer
 ============= */
 /* =============
-    Hero
+    CameraLogo
 ============= */
-#Hero {
-  background-image: url("../img/hero/bg1.jpg");
+#CameraLogo {
+  background-color: yellow;
   display: grid;
   grid-template-areas: ". name flower .";
   grid-template-columns: 30px 750px 90px 50px;
@@ -468,71 +468,4 @@ nav ul li a:visited:active {
   background-size: cover;
   background-position: center;
   justify-content: center;
-}
-#Hero div {
-  text-align: center;
-  height: 220px;
-  padding-left: 200px;
-  padding-top: 130px;
-  padding-bottom: 200px;
-  font-size: 3.25rem;
-  grid-area: name;
-}
-#Hero div h1 {
-  font-family: "Stick No Bills", sans-serif;
-  color: white;
-}
-#Hero #flower {
-  text-align: left;
-  grid-area: flower;
-}
-
-/* =============
-    Info
-============= */
-#info {
-  margin-top: 30px;
-  background-image: url("../img/info/line.png");
-  background-size: 70%;
-  background-repeat: no-repeat;
-  background-position: right;
-  background-position: 100% 20%;
-  display: grid;
-  grid-template-columns: auto 80% 1px;
-  grid-template-areas: ". sun";
-}
-#info > div {
-  grid-area: sun;
-}
-#info > div #line {
-  display: none;
-  grid-area: line;
-  width: 100%;
-  padding-top: 80px;
-}
-#info > div #sun {
-  grid-area: sun;
-}
-#info > div #full {
-  display: none;
-}
-#info > div article {
-  padding: 1px 35vw 20px 18vw;
-  font-family: "Ruda";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 37px;
-  font-family: "Ruda", sans-serif;
-}
-@media (min-width: 768px) {
-  #info > div article {
-    font-size: 20px;
-  }
-}
-@media (min-width: 992px) {
-  #info > div article {
-    font-size: 25px;
-    padding: 1px 35vw 20px 18vw;
-  }
 }

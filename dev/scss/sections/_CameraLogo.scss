@@ -1,0 +1,15 @@
+/* =============
+    CameraLogo
+============= */
+#CameraLogo {
+    background-color: yellow;
+    display: grid;
+    grid-template-areas: ". name flower .";
+    grid-template-columns: 30px 750px 90px 50px;
+    background-repeat: no-repeat;
+    padding-top: 145px;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+
+}

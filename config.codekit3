@@ -78,6 +78,16 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/hero\/cameraSVG.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/hero\/cameraSVG.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/hero\/Flower.png" : {
       "ft" : 32768,
       "iS" : 13042,
@@ -159,36 +169,12 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/dev\/content\/hero.kit" : {
+    "\/dev\/content\/CameraLogo.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/hero.html",
-      "oF" : 0
-    },
-    "\/dev\/content\/info.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/info.html",
-      "oF" : 0
-    },
-    "\/dev\/global\/head.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/global\/head.html",
-      "oF" : 0
-    },
-    "\/dev\/global\/header.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/global\/header.html",
+      "oAP" : "\/dev\/content\/CameraLogo.html",
       "oF" : 0
     },
     "\/dev\/global\/scripts.kit" : {
@@ -368,7 +354,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_hero.scss" : {
+    "\/dev\/scss\/sections\/_CameraLogo.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -377,22 +363,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_hero.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/dev\/scss\/sections\/_info.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_info.css",
+      "oAP" : "\/dev\/scss\/sections\/_CameraLogo.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
