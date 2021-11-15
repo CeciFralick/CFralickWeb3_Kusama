@@ -103,9 +103,22 @@
     },
     "\/deploy\/img\/info\/line.png" : {
       "ft" : 32768,
-      "iS" : 1810,
+      "iS" : 285,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/info\/line.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/info\/osun.png" : {
+      "ft" : 32768,
+      "iS" : 9371,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/info\/osun.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -127,16 +140,6 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/info\/Sun.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/deploy\/img\/info\/Sun.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
     "\/deploy\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -156,51 +159,27 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/dev\/content\/divider.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/index.kit",
-      "oF" : 2
-    },
-    "\/dev\/content\/hero.kit" : {
+    "\/dev\/content\/logo.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/hero.html",
-      "oF" : 0
-    },
-    "\/dev\/content\/info.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/info.html",
+      "oAP" : "\/dev\/content\/logo.html",
       "oF" : 0
     },
     "\/dev\/global\/head.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/dev\/global\/head.html",
-      "oF" : 0
-    },
-    "\/dev\/global\/header.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/global\/header.html",
       "oF" : 0
     },
     "\/dev\/global\/scripts.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/dev\/global\/scripts.html",
       "oF" : 0
     },
@@ -213,7 +192,7 @@
       "oF" : 2
     },
     "\/dev\/js\/scripts.js" : {
-      "bF" : 0,
+      "bF" : 4,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
@@ -373,7 +352,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_divider.scss" : {
+    "\/dev\/scss\/sections\/_logo.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -382,37 +361,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_divider.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/dev\/scss\/sections\/_hero.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_hero.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/dev\/scss\/sections\/_info.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_info.css",
+      "oAP" : "\/dev\/scss\/sections\/_logo.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,

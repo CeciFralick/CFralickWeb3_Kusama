@@ -8,7 +8,6 @@ const mainTL = gsap.timeline();
 // to = end point of timeline
 // mainTL.to("#hero article",{duration:2,alpha:0, scale:2});
 
-const heroHeight = document.querySelector("#flower");
 
 const aniTime = 0.5;
 
