@@ -2,13 +2,28 @@
     CameraLogo
 ============= */
 #CameraLogo {
-    background-color: yellow;
-    display: grid;
-    grid-template-areas: ". name flower .";
-    grid-template-columns: 30px 750px 90px 50px;
-    background-repeat: no-repeat;
-    padding-top: 145px;
-    background-size: cover;
-    background-position: center;
-    justify-content: center;
+display: grid;
+grid-template-columns: auto 95vw auto;
+grid-template-areas: ". logo .";
+height: 110vh;
+
+    @include md{
+        grid-template-columns: auto 80vw auto;
+    }
+
+    @include lg{
+        grid-template-columns: auto 85vw auto;
+    }
+
+    @include xl{
+        grid-template-columns: auto 75vw auto;
+    }
+
+    >div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: logo;
+        height: 100%;
+    }
 }
