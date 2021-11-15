@@ -374,6 +374,14 @@ h2 {
   display: none;
 }
 
+.hide {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
 /* =============
     Typography
 ============= */
@@ -464,110 +472,35 @@ nav ul li a:visited:active {
 /* =============
     Footer
 ============= */
-#preloader {
-  position: fixed;
-  height: 100vh;
-  width: 100%;
-  z-index: 1000;
-  background-color: #fff9c7;
-}
-#preloader > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  position: relative;
-}
-#preloader > div #frame2, #preloader > div #frame3, #preloader > div #frame4, #preloader > div #frame5, #preloader > div #frame6, #preloader > div #frame7, #preloader > div #frame8 {
-  visibility: hidden;
-}
-#preloader > div section {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* =============
-    Hero
+    Logo
 ============= */
-#Hero {
-  background-image: url("../img/hero/bg1.jpg");
+#logo {
+  background-color: lightyellow;
   display: grid;
-  grid-template-areas: ". name flower .";
-  grid-template-columns: 30px 750px 90px 50px;
-  background-repeat: no-repeat;
-  padding-top: 145px;
-  background-size: cover;
-  background-position: center;
-  justify-content: center;
-}
-#Hero div {
-  text-align: center;
-  height: 220px;
-  padding-left: 200px;
-  padding-top: 130px;
-  padding-bottom: 200px;
-  font-size: 3.25rem;
-  grid-area: name;
-}
-#Hero div h1 {
-  font-family: "Stick No Bills", sans-serif;
-  color: white;
-}
-#Hero #flower {
-  text-align: left;
-  grid-area: flower;
-}
-
-/* =============
-    Info
-============= */
-#info {
-  margin-top: 30px;
-  background-image: url("../img/info/line.png");
-  background-size: 70%;
-  background-repeat: no-repeat;
-  background-position: right;
-  background-position: 100% 20%;
-  display: grid;
-  grid-template-columns: auto 80% 1px;
-  grid-template-areas: ". sun";
-}
-#info > div {
-  grid-area: sun;
-}
-#info > div #line {
-  display: none;
-  grid-area: line;
-  width: 100%;
-  padding-top: 80px;
-}
-#info > div #sun {
-  grid-area: sun;
-}
-#info > div #full {
-  display: none;
-}
-#info > div article {
-  padding: 1px 35vw 20px 18vw;
-  font-family: "Ruda";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 37px;
-  font-family: "Ruda", sans-serif;
+  grid-template-columns: auto 95vw auto;
+  grid-template-areas: ". logo .";
+  height: 110vh;
 }
 @media (min-width: 768px) {
-  #info > div article {
-    font-size: 20px;
+  #logo {
+    grid-template-columns: auto 80vw auto;
   }
 }
 @media (min-width: 992px) {
-  #info > div article {
-    font-size: 25px;
-    padding: 1px 35vw 20px 18vw;
+  #logo {
+    grid-template-columns: auto 85vw auto;
   }
+}
+@media (min-width: 1200px) {
+  #logo {
+    grid-template-columns: auto 75vw auto;
+  }
+}
+#logo > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: logo;
+  height: 100%;
 }

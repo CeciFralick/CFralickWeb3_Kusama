@@ -1,0 +1,30 @@
+/* =============
+    Logo
+============= */
+#logo {
+    background-color: lightyellow;
+    display: grid;
+    grid-template-columns: auto 95vw auto;
+    grid-template-areas: ". logo .";
+    height: 110vh;
+
+    @include md {
+        grid-template-columns: auto 80vw auto;
+    }
+
+    @include lg {
+        grid-template-columns: auto 85vw auto;
+    }
+
+    @include xl {
+        grid-template-columns: auto 75vw auto;
+    }
+
+    >div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: logo;
+        height: 100%;
+    }
+}
