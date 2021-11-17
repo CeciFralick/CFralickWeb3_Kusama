@@ -33,6 +33,13 @@ mainTL.from("#bbase",{yPercent:40, autoAlpha:0,duration: .5, ease: "back.out(1.7
 mainTL.from("#button",{yPercent:40, autoAlpha:0,duration: .5, ease: "back.out(1.9)"},"same" )
 
 
+function lines(){
+    const tl=gsap.timeline();
+
+    return tl;
+}
+
+
 ;
 
 
@@ -68,6 +75,7 @@ MorphSVGPlugin.create();
 
 // const aniTime = 0.5;
 
+<<<<<<< Updated upstream
 mainTL.add(lines())
 .add(layertwo())
 
@@ -75,3 +83,6 @@ mainTL.add(lines())
 
 
 ;
+=======
+gsap.timeline()
+>>>>>>> Stashed changes
