@@ -68,4 +68,10 @@ MorphSVGPlugin.create();
 
 // const aniTime = 0.5;
 
-gsap.timeline()
+mainTL.add(lines())
+.add(layertwo())
+
+
+
+
+;
