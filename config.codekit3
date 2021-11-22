@@ -169,12 +169,12 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/dev\/content\/cameraSVG.kit" : {
+    "\/dev\/content\/mbatter.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/cameraSVG.html",
+      "oAP" : "\/dev\/content\/mbatter.html",
       "oF" : 0
     },
     "\/dev\/global\/head.kit" : {
@@ -362,7 +362,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_cameraSVG.scss" : {
+    "\/dev\/scss\/sections\/_mbatter.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -371,7 +371,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_cameraSVG.css",
+      "oAP" : "\/dev\/scss\/sections\/_mbatter.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
