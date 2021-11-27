@@ -12,25 +12,6 @@ gsap.registerPlugin(GSDevTools, MorphSVGPlugin, DrawSVGPlugin);
 
 const mainTL = gsap.timeline()
 
-// mainTL.from("#tleft",{drawSVG: 0, ease:"none", duration:.5, stagger: 0.1}, "lsame")
-// .from("#bleft",{drawSVG: 0, ease:"none", duration:.5, stagger: 0.1}, "lsame")
-// .from("#bright",{drawSVG: 0, ease:"none", duration:.5, stagger: 0.2}, "lsame")
-// .from("#tright",{drawSVG: 0, ease:"none", duration:.5, stagger: 0.2}, "lsame")
-// .to("#tleft",{drawSVG: 0, ease:"none", duration:.5, stagger: 0.1}, "osame")
-// .to("#bleft",{drawSVG: 0, ease:"none", duration:.5, stagger: 0.1}, "osame")
-// .to("#bright",{drawSVG: 0, ease:"none", duration:.5, stagger: 0.1}, "osame")
-// .to("#tright",{drawSVG: 0, ease:"none", duration:.5, stagger: 0.1}, "osame")
-// .from("#smbody",{opacity:0, duration:1, y:"1000", rotate:-180})
-// .to("#smbody", {morphSVG:"#body",duration: .5, ease: "back.out(1.7)"})
-// .from("#smflash",{duration:0},"playSameTime")
-// .to("#smflash", {morphSVG:"#flash",duration: .5, ease: "back.out(1.7)"}) 
-// .from("#lense",{scale:0},"same")
-// .to("#lense",{xPercent:40})
-// .to("#lense",{xPercent:0})
-// .from("#top",{yPercent:40, autoAlpha:0, duration: .5, ease: "back.out(1.7)"},"same")
-// .from("#bbase",{yPercent:40, autoAlpha:0,duration: .5, ease: "back.out(1.7)"},"same")
-// .from("#button",{yPercent:40, autoAlpha:0,duration: .5, ease: "back.out(1.9)"},"same" )
-
 // {drawSVG: 0, ease:"none", duration:.2, stagger: 0.1}, "lsame")
 
 function begins(){
@@ -44,7 +25,7 @@ function begins(){
     tl.to("#outer", {morphSVG:"#outer2",duration: .5, ease: "back.out(1.7)"},"-=30%")
     // tl.to("#blueoutline", {drawSVG: 0, ease:"none", duration:.5, stagger: 0.1})
     tl.to("#Whte",{yPercent:40, autoAlpha:0,duration: 2, ease: "elastic.out(1, 0.2)"},"-=70%")
-    tl.to("#middle",{morphSVG:"#middle2",duration: .5, ease: "back.out(1)"},"-=30%")
+    tl.to("#middle",{morphSVG:"#middle2",duration: .5, ease: "back.out(1)"},"-=60%")
     tl.to("#outer", {morphSVG:"#LeftSide",duration: .5, ease: "back.out(1)"},"-=30%")
     tl.to("#LeftSide", {morphSVG:"#RightSide",duration: .5, ease: "back.out(1)"},"-=50%")
     tl.to("#mid", {morphSVG:"#HatBand",duration: .5, ease: "back.out(1.7)"},"-=30%")
@@ -112,13 +93,18 @@ function outlinea(){
     return tl;
 }
 
-// function reveals(){
-//     const tl=gsap.timeline();
-//     tl.from("#Left.Cheek", {duration:.5},"-=50%")
-//     tl.from("#Left.Mid", {duration:.5},"-=50%")
-//     tl.from("#Left.Out", {duration:0.5},"-=50%")
-//     return tl;
-// }
+function hairtrans(){
+    const tl=gsap.timeline();
+    tl.to("#middle", {morphSVG:"#Left.Out",duration: .5, ease: "back.out(1)"},"-=30%")
+    tl.to("#RightChunk",{morphSVG:"#Right.Out",duration: .5, ease: "back.out(1)"},"-=50%")
+    return tl;
+}
+
+function blink(){
+    const tl=gsap.timeline();
+    tl.from("#Right.Eye", {morphSVG:"#Right.Blink",duration: .5, ease: "back.out(1.7)"})
+    return tl;
+}
 
 // function outlines(){
 //     const tl=gsap.timeline();
@@ -159,11 +145,13 @@ function outlinea(){
 
 
 mainTL.add(begins())
-.add(wholeface())
+.add(wholeface(),"-=20%")
 // .add(hairstuff())
-.add(face(),"-=20%")
+.add(face(),"-=50%")
 .add(outlineb())
 .add(outlinea(),"-=90%")
+.add(hairtrans())
+.add(blink())
 // .add(reveals())
 // .add(outlines())
 ;
