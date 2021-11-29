@@ -46,11 +46,15 @@ function lines(){
     // tl.to("#bleft",{morphSVG:"#smbleft", duration: .5, ease: "back.out(1.7)"}, "tsame")
     // tl.to("#bright",{morphSVG:"#smbright",duration: .5, ease: "back.out(1.7)"}, "tsame")
     // tl.to("#tright",{morphSVG:"#smtright",duration: .5, ease: "back.out(1.7)"}, "tsame")
-
+    tl.to("#tleft",{display:"none"}, "otsame")
+    tl.to("#bleft",{display:"none"}, "otsame")
+    tl.to("#bright",{display:"none"}, "otsame")
+    tl.to("#tright",{display:"none"}, "otsame")
     // tl.to("#tleft",{drawSVG:0, ease:"none", duration:.4, stagger: 0.5},"ttime")
     // tl.to("#bleft",{drawSVG: 0 , ease:"none", duration:.4, stagger: 0.5}, "ttime")
     return tl;
 }
+
 
 function cameraappears(){
     const tl=gsap.timeline();
