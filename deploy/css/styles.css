@@ -473,34 +473,12 @@ nav ul li a:visited:active {
     Footer
 ============= */
 /* =============
-    mbatterlogo
+    mbatter
 ============= */
-#mbatter {
+#svg #g {
   background-color: lightyellow;
   display: grid;
   grid-template-columns: auto 95vw auto;
-  grid-template-areas: ". logo .";
-  height: 110vh;
-}
-@media (min-width: 768px) {
-  #mbatter {
-    grid-template-columns: auto 80vw auto;
-  }
-}
-@media (min-width: 992px) {
-  #mbatter {
-    grid-template-columns: auto 85vw auto;
-  }
-}
-@media (min-width: 1200px) {
-  #mbatter {
-    grid-template-columns: auto 75vw auto;
-  }
-}
-#mbatter > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-area: logo;
-  height: 100%;
+  grid-template-areas: ". mbatter .";
+  grid-area: "mbatter";
 }
