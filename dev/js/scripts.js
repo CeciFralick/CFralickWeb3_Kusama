@@ -34,19 +34,18 @@ const mainTL = gsap.timeline()
 
 function lines(){
     const tl=gsap.timeline();
-    tl.from("#tleft",{drawSVG: 0, ease:"none", duration:.2, stagger: 0.1}, "lsame")
-    tl.from("#bleft",{drawSVG: 0, ease:"none", duration:.2, stagger: 0.1}, "lsame")
-    tl.from("#bright",{drawSVG: 0, ease:"none", duration:.2, stagger: 0.2}, "lsame")
-    tl.from("#tright",{drawSVG: 0, ease:"none", duration:.2, stagger: 0.2}, "lsame")
-    tl.to("#tleft",{drawSVG: 0, ease:"none", duration:.4, stagger: 0.5}, "osame")
-    tl.to("#bleft",{drawSVG: 0, ease:"none", duration:.4, stagger: 0.5}, "osame")
-    tl.to("#bright",{drawSVG: 0, ease:"none", duration:.2, stagger: 0.1}, "osame")
-    tl.to("#tright",{drawSVG: 0, ease:"none", duration:.2, stagger: 0.1}, "osame")
-    
-    tl.to("#tleft",{morphSVG:"#smtleft",duration: .5, ease: "back.out(1.7)"}, "tsame")
-    tl.to("#bleft",{morphSVG:"#smbleft",duration: .5, ease: "back.out(1.7)"}, "tsame")
-    tl.to("#bright",{morphSVG:"#smbright",duration: .5, ease: "back.out(1.7)"}, "tsame")
-    tl.to("#tright",{morphSVG:"#smtright",duration: .5, ease: "back.out(1.7)"}, "tsame")
+    tl.from("#tleft",{rotate:45, drawSVG: 0, ease:"none", duration:.4, stagger: 0.1}, "lsame")
+    tl.from("#bleft",{rotate:45,drawSVG: 0, ease:"none", duration:.4, stagger: 0.1}, "lsame")
+    tl.from("#bright",{rotate:45,drawSVG: 0, ease:"none", duration:.4, stagger: 0.2}, "lsame")
+    tl.from("#tright",{rotate:45,drawSVG: 0, ease:"none", duration:.4, stagger: 0.2}, "lsame")
+    tl.to("#tleft",{drawSVG:"0%",opacity:0,duration: .5, stagger: 0.1,stroke: "white"}, "osame")
+    tl.to("#bleft",{drawSVG:"0%", opacity:0,duration: .5,stagger: 0.1,stroke: "white"}, "osame")
+    tl.to("#bright",{drawSVG:"0%",opacity:0,duration: .5,stagger: 0.1,stroke: "white"}, "osame")
+    tl.to("#tright",{drawSVG:"0%",opacity:0,duration: .5, stagger: 0.1,stroke: "white"}, "osame")
+    // tl.to("#tleft",{morphSVG:"#smtleft", duration: .5, ease: "back.out(1.7)"}, "tsame")
+    // tl.to("#bleft",{morphSVG:"#smbleft", duration: .5, ease: "back.out(1.7)"}, "tsame")
+    // tl.to("#bright",{morphSVG:"#smbright",duration: .5, ease: "back.out(1.7)"}, "tsame")
+    // tl.to("#tright",{morphSVG:"#smtright",duration: .5, ease: "back.out(1.7)"}, "tsame")
 
     // tl.to("#tleft",{drawSVG:0, ease:"none", duration:.4, stagger: 0.5},"ttime")
     // tl.to("#bleft",{drawSVG: 0 , ease:"none", duration:.4, stagger: 0.5}, "ttime")
@@ -55,7 +54,9 @@ function lines(){
 
 function cameraappears(){
     const tl=gsap.timeline();
-    tl.from("#smbody",{opacity:0, duration:1, y:"1000", rotate:-180})
+    // tl.from("#lw",{yPercent:40, duration: .5, ease: "back.out(1.7)"})
+    // tl.from("#rw",{yPercent:40, duration: .5, ease: "back.out(1.7)"})
+    tl.from("#smbody",{opacity:0, duration:1, y:"1000", rotate:-180},"-=50%")
     tl.to("#smbody", {morphSVG:"#body",duration: .5, ease: "back.out(1.7)"})
     return tl;
 }
@@ -85,8 +86,8 @@ function cameratop(){
 
 
 
-mainTL.add(lines())
-.add(cameraappears(),"-=99%")
+mainTL.add(lines(),"same")
+.add(cameraappears(),"same")
 .add(flashes(),"-=60%")
 .add(lenses(),"sameTime", "-=60%")
 .add(cameratop(),"sameTime")
