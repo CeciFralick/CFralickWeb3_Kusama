@@ -19,9 +19,9 @@ const mainTL = gsap.timeline()
 
 function begins(){
     const tl=gsap.timeline();
-    tl.from("#outer",{yPercent:40, autoAlpha:0, duration: 1.5, ease: "elastic.out(1, 0.5)"})
-    tl.from("#mid",{yPercent:40, autoAlpha:0,duration: 1, ease: "elastic.out(1, 0.5)"},"-=70%")
-    tl.from("#middle",{yPercent:-40, autoAlpha:0, duration: 1, ease: "elastic.out(1, 0.5)"},"-=50%")
+    tl.from("#outer",{yPercent:40, duration: 1, ease: "elastic.out(1, 0.5)"})
+    tl.from("#mid",{yPercent:40, autoAlpha:0,duration: .75, ease: "elastic.out(1, 0.5)"},"-=70%")
+    tl.from("#middle",{yPercent:-40, autoAlpha:0, duration: .5, ease: "elastic.out(1, 0.5)"},"-=50%")
     // tl.from("#blueoutline", {drawSVG: 0, ease:"none", duration:1, stagger: 0.1})
     // tl.from("#Hat",{drawSVG: 0, ease:"none", duration:.2, stagger: 0.1})
     tl.to("#mid", {morphSVG:"#mid2",duration: .25, ease: "back.out(1.7)"},"-=70%")
