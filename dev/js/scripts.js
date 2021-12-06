@@ -92,7 +92,7 @@ function face(){
 function outlineb(){
     const tl=gsap.timeline();
     tl.from("#Right.Eye",{yPercent:40, autoAlpha:0, duration: .5, ease: "elastic.out(1, 0.5)"})
-    tl.to("#Whte3",{yPercent:70, duration: .5, ease: "none"},"-=80%")
+    tl.to("#Whte3",{yPercent:50, duration: .5, ease: "none", scale: 0},"-=80%")
     return tl;
 }
 function outlinea(){
@@ -150,7 +150,7 @@ mainTL.add(begins())
 
 
 
-GSDevTools.create();
+// GSDevTools.create();
 DrawSVGPlugin.create();
 MorphSVGPlugin.create();
 MotionPathPlugin.create();
