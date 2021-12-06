@@ -30,7 +30,7 @@ function begins(){
     tl.to("#outer", {morphSVG:"#outer2",duration: .35, ease: "back.out(1.7)"},"-=70%")
     // tl.to("#blueoutline", {drawSVG: 0, ease:"none", duration:.5, stagger: 0.1})
     tl.to("#Whte",{yPercent:40, autoAlpha:0,duration: 2, ease: "elastic.out(1, 0.2)"},"-=70%")
-    tl.to("#middle",{morphSVG:"#middle2",duration: .35, ease: "back.out(1)"},"-=60%")
+    tl.to("#middle",{morphSVG:"#middle2",duration: .35, ease: "back.out(1)"},"-=80%")
     tl.to("#mid", {morphSVG:"#HatBand",duration: .35, ease: "back.out(1.7)"},"-=30%")
     tl.to("#mid2", {morphSVG:"#HatBand",duration: .35, ease: "back.out(1.7)"},"-=30%")
     tl.to("#outer", {morphSVG:"#LeftSide",duration: .35, ease: "back.out(1)"},"-=30%")
