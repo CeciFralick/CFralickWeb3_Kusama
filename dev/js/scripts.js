@@ -14,6 +14,7 @@ gsap.set("#Vector5",{transformOrigin: "top middle"})
 gsap.set("#Vector6",{transformOrigin: "top middle"})
 
 const mainTL = gsap.timeline()
+mainTL.timeScale( 1.4 );
 
 // {drawSVG: 0, ease:"none", duration:.2, stagger: 0.1}, "lsame")
 
@@ -36,7 +37,7 @@ function begins(){
     tl.to("#LeftSide", {morphSVG:"#RightSide",duration: .35, ease: "back.out(1)"},"-=50%")
     // tl.to("#LeftSide", {morphSVG:"#RightSide",duration: .5, ease: "back.out(1)"},"-=50%")
     tl.to("#middle",{morphSVG:"#LeftChunk",duration: 1, ease: "back.out(1)"},"-=70%")
-    tl.from("#RightChunk",{xPercent:-80, autoAlpha:0, duration: 1.5, ease: "elastic.out(1, 0.5)"},"-=30%")
+    tl.from("#RightChunk",{xPercent:-80, autoAlpha:0, duration: 1.5, ease: "elastic.out(1, 0.5)"},"-=50%")
     tl.to("#Whte4",{yPercent:40, autoAlpha:0, duration: 1.5, ease: "elastic.out(1, 0.3)"},"-=90%")
 
     // tl.to("#middle",{morphSVG:"#LeftChunk",duration: .5, ease: "back.out(1)"})
@@ -46,7 +47,7 @@ function begins(){
 
 function wholeface(){
     const tl=gsap.timeline();
-    tl.from("#Face",{drawSVG: 0, ease:"none", duration:.75, stagger: 0.1},"-=50%", "same")
+    tl.from("#Face",{drawSVG: 0, ease:"none", duration:.75, stagger: 0.1},"-=60%", "same")
     tl.from("#MidTie", {yPercent:-80, autoAlpha:0, duration: .5, ease: "elastic.out(1, 0.5)"},"-=10%")
     tl.to("#MidTie",{morphSVG:"#MidTiea", duration: .5, ease: "back.out(1)"},"-=30%")
     return tl;
@@ -56,9 +57,9 @@ function hairlines(){
     tl.from("#Vector1", {drawSVG: 0, ease:"none", duration:.5, stagger: 0.1},"-=90%", "same")
     tl.from("#Vector2", {drawSVG: 0, ease:"none", duration:.5, stagger: 0.1},"-=80%")
     tl.from("#Vector3", {drawSVG: 0, ease:"none", duration:.5, stagger: 0.1},"-=70%")
-    tl.from("#Vector4", {drawSVG: 0, ease:"none", duration:.5, stagger: 0.1},"-=60%")
-    tl.from("#Vector5", {drawSVG: 0, ease:"none", duration:.5, stagger: 0.1},"-=50%")
-    tl.from("#Vector6", {drawSVG: 0, ease:"none", duration:.5, stagger: 0.1},"-=40%")
+    tl.from("#Vector4", {drawSVG: 0, ease:"none", duration:.5, stagger: 0.1},"-=70%")
+    tl.from("#Vector5", {drawSVG: 0, ease:"none", duration:.5, stagger: 0.1},"-=60%")
+    tl.from("#Vector6", {drawSVG: 0, ease:"none", duration:.5, stagger: 0.1},"-=50%")
     return tl;
 }
 
@@ -80,7 +81,7 @@ function face(){
     tl.from("#bowmidoutline", {drawSVG: 0, ease:"none", duration:.5, stagger: 0.1},"-=50%")
     tl.from("#leftbowoutline", {drawSVG: 0, ease:"none", duration:.5, stagger: 0.1},"-=50%")
     tl.from("#rightbowoutline", {drawSVG: 0, ease:"none", duration:.5, stagger: 0.1},"-=50%")
-    tl.from("#righteyeline", {drawSVG: 0, ease:"none", duration:.5, stagger: 0.1},"-=50%")
+    tl.from("#righteyeline", {drawSVG: 0, ease:"none", duration:.5, stagger: 0.1},"-=60%")
     tl.from("#lefteyeline", {drawSVG: 0, ease:"none", duration:.5, stagger: 0.1},"-=50%")
     tl.from("#LeftTie", {xPercent:-80, autoAlpha:0, duration: .75, ease: "elastic.out(1, 0.7)"},"-=70%")
     tl.from("#RightTie", {xPercent:80, autoAlpha:0, duration: .75, ease: "elastic.out(1, 0.7)"},"-=70%")
@@ -91,7 +92,7 @@ function face(){
 function outlineb(){
     const tl=gsap.timeline();
     tl.from("#Right.Eye",{yPercent:40, autoAlpha:0, duration: .5, ease: "elastic.out(1, 0.5)"})
-    tl.to("#Whte3",{yPercent:70, duration: .5, ease: "none"},"-=50%")
+    tl.to("#Whte3",{yPercent:70, duration: .5, ease: "none"},"-=80%")
     return tl;
 }
 function outlinea(){

@@ -475,10 +475,18 @@ nav ul li a:visited:active {
 /* =============
     mbatter
 ============= */
-#svg #g {
-  background-color: lightyellow;
+#mbatterb {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
   display: grid;
-  grid-template-columns: auto 95vw auto;
+  grid-template-columns: auto 97vw auto;
   grid-template-areas: ". mbatter .";
-  grid-area: "mbatter";
+}
+#mbatterb div {
+  background-color: lightyellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: mbatter;
 }
