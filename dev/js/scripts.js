@@ -120,7 +120,7 @@ mainTL.add(lines(),"same")
 
 
 
-GSDevTools.create();
+// GSDevTools.create();
 DrawSVGPlugin.create();
 MorphSVGPlugin.create();
 
